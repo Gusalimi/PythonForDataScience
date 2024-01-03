@@ -6,7 +6,11 @@ from PIL import Image
 
 def main():
     """Main function"""
-    arr = ft_load("animal.jpeg")
+    try:
+        arr = ft_load("animal.jpeg")
+    except Exception:
+        print("Error opening animal.jpeg")
+        return
     print(arr)
     img = Image.fromarray(arr).convert("L").crop((450, 100, 850, 500))
     arr = np.array(img)[:, :, np.newaxis]
