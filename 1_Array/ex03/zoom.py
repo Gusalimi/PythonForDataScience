@@ -1,7 +1,3 @@
-"""Loads animal.jpeg, prints its shape and pixel content and displays
-it in grayscale after cropping it"""
-
-
 import matplotlib.pyplot as plt
 import numpy as np
 from load_image import ft_load
