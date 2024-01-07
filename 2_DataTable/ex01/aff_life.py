@@ -8,7 +8,7 @@ def main():
         return
     france = data.loc[data['country'] == "France"].iloc[:, 1:]
 
-    plt.plot(france.columns, france.values[0])
+    plt.plot(france.columns.values, france.values[0])
 
     plt.title("France Life expectancy Projections")
 

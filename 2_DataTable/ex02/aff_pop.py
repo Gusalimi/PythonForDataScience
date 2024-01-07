@@ -21,8 +21,8 @@ def main():
     france = france.map(convert_to_int)
     belgium = belgium.map(convert_to_int)
 
-    plt.plot(belgium.columns, belgium.values[0], label="Belgium")
-    plt.plot(france.columns, france.values[0], label="France")
+    plt.plot(belgium.columns.values, belgium.values.flatten(), label="Belgium")
+    plt.plot(france.columns.values, france.values.flatten(), label="France")
 
     plt.title("Population Projections")
     plt.legend()
