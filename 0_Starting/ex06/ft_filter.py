@@ -12,11 +12,13 @@ is true. If function is None, return the items that are true."""
 #     lst = [0, 1, 2, 3, 4, 5]
 #     print("lst = [0, 1, 2, 3, 4, 5]\n")
 #     print(" FT ".center(20, '='))
+#     print(ft_filter.__doc__)
 #     print(list(ft_filter(lambda x: x % 2 == 0, lst)))
 #     print(list(ft_filter(None, lst)))
 #     print(list(ft_filter(lambda x: x % 2 == 0, [])))
 #     print()
 #     print(" NORMAL ".center(20, '='))
+#     print(filter.__doc__)
 #     print(list(filter(lambda x: x % 2 == 0, lst)))
 #     print(list(filter(None, lst)))
 #     print(list(ft_filter(lambda x: x % 2 == 0, [])))
