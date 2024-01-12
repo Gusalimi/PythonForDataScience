@@ -39,8 +39,3 @@ def ft_grey(array) -> np.array:
     """Returns the grey channel of the image received"""
     arr = np.array(Image.fromarray(array).convert("L"))
     return (arr)
-
-# To print image:
-# from PIL import Image
-# im = Image.fromarray(ft_function(array))
-# im.show()
